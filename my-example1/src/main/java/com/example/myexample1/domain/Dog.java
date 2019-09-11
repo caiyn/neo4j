@@ -1,8 +1,10 @@
 package com.example.myexample1.domain;
 
 import org.neo4j.ogm.annotation.Id;
+import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Property;
 
+@NodeEntity
 public class Dog {
     @Id
     private Long id;
