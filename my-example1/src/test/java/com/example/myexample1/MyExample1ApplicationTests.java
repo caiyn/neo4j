@@ -10,9 +10,9 @@ public class MyExample1ApplicationTests {
     public void contextLoads() {
         DemoBo demoBo = new DemoBo();
         try {
-            DemoAnnotation annotation = demoBo.getClass().getDeclaredField("name").getAnnotation
-                    (DemoAnnotation
-                    .class);
+            DemoAnnotation annotation = demoBo.getClass()
+                    .getDeclaredField("name")
+                    .getAnnotation(DemoAnnotation.class);
             System.out.println(annotation.username());
         } catch (NoSuchFieldException e) {
             e.printStackTrace();

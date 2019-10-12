@@ -12,4 +12,6 @@ public interface PersonRepository extends Neo4jRepository<Person, Long> {
 
     @Query("MATCH (:Person {name:{0}})-[:LIKES]->(m:Person) return m")
     List<Person> whoILikes(String myName);
+
+
 }
